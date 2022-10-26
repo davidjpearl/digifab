@@ -1,0 +1,251 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Generic - DigiFab 533 by David</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Pearl</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+<!-- Menu --><nav id="menu">
+<h2>Menu</h2>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="Modelling.html">Modelling and Laser Cutting</a></li>
+<li><a href="parametric.html">Parametric Modelling with Grasshopper </a></li>
+<li><a href="3dPrint.html">3D printing </a></li>
+<li><a href="Subtractive.html">Subtractive Manufacturing </a></li>
+<li><a href="Mesh.html">Mesh </a></li>
+<li><a href="Lamps.html">Lamps </a></li>
+<li><a href="Molding.html">Molding and Casting </a></li>
+<li><a href="Final.html">Final Project </a></li>
+<li><a href="about.html">About Me</a></li>
+</ul>
+</nav><!-- Main -->
+<div id="main">
+<div class="inner">
+<h1>Assignment 3: 3D Printing</h1>
+<br />
+<h2>Test Printing with the Ender 3 Pro</h2>
+For this assignment, I began by setting up my printer and conductied the <a href="First,%20conduct%20the%20bed%20leveling%20protocol%20from%20Filament%20Friday:%20https:/www.thingiverse.com/thing:3235018Links%20to%20an%20external%20site.">bed leveling protocol </a>to calibrate my machine.</div>
+<div class="inner"><img src="https://github.com/davidjpearl/digifab-533/blob/main/Week3/Images/IMG_0367.JPG?raw=true" alt="IMG_0367.JPG" width="290" height="386" /></div>
+<div class="inner"><strong></strong></div>
+<h3 class="inner"><strong>Cubes</strong></h3>
+<p>After leveling, I modelled my cubes, 1 at a time on Rhino, exported to Cura, and began adapting settings after each prints.</p>
+<br />
+<table style="border-collapse: collapse; width: 98.7616%; height: 198px;" border="1">
+<tbody>
+<tr style="height: 26px;">
+<td style="width: 21.1314%; height: 26px;"><strong>Setting</strong></td>
+<td style="width: 29.1683%; height: 26px;"><strong>Expected Size</strong></td>
+<td style="width: 15.1556%; height: 26px;"><strong>Real Size</strong></td>
+<td style="width: 15.1556%; height: 26px;"><strong>Time to Print<br /></strong></td>
+</tr>
+<tr style="height: 27px;">
+<td style="width: 21.1314%; height: 27px;">Default Low Quality</td>
+<td style="width: 29.1683%; height: 27px;">2cm x 2cm</td>
+<td style="width: 15.1556%; height: 27px;">1.98cm x 1.98 cm</td>
+<td style="width: 15.1556%; height: 27px;">20 min</td>
+</tr>
+<tr style="height: 26px;">
+<td style="width: 21.1314%; height: 92px;">Default Standard</td>
+<td style="width: 29.1683%; height: 92px;">2cm x 2 cm</td>
+<td style="width: 15.1556%; height: 92px;">2cm x 2 cm</td>
+<td style="width: 15.1556%; height: 92px;">22 min</td>
+</tr>
+<tr style="height: 26px;">
+<td style="width: 21.1314%; height: 26px;">Default Super Quality</td>
+<td style="width: 29.1683%; height: 26px;">2cm x 2 cm</td>
+<td style="width: 15.1556%; height: 26px;">1.99cm x 1.99 cm</td>
+<td style="width: 15.1556%; height: 26px;">30 min</td>
+</tr>
+<tr style="height: 27px;">
+<td style="width: 21.1314%; height: 27px;">Concentric</td>
+<td style="width: 29.1683%; height: 27px;">2cm x 2 cm</td>
+<td style="width: 15.1556%; height: 27px;">1.97cm</td>
+<td style="width: 15.1556%; height: 27px;"></td>
+</tr>
+</tbody>
+</table>
+<p><img src="https://github.com/davidjpearl/digifab-533/blob/main/Week3/Images/Screen%20Shot%202022-10-21%20at%209.47.10%20AM.png?raw=true" alt="Screen Shot 2022-10-21 at 9.47.10 AM.png" width="430" height="327" /><img src="https://github.com/davidjpearl/digifab-533/blob/main/Week3/Images/IMG_0356.JPG?raw=true" alt="IMG_0356.JPG" width="239" height="319" /><img src="https://github.com/davidjpearl/digifab-533/blob/main/Week3/Images/IMG_0366.JPG?raw=true" alt="IMG_0366.JPG" width="283" height="378" /></p>
+<p></p>
+<h3 class="inner"><strong>Tubes</strong></h3>
+<table style="border-collapse: collapse; width: 98.7616%; height: 78px;" border="1">
+<tbody>
+<tr style="height: 26px;">
+<td style="width: 21.1314%; height: 26px;"><strong>Setting</strong></td>
+<td style="width: 29.1683%; height: 26px;"><strong>Expected Size</strong></td>
+<td style="width: 15.1556%; height: 26px;"><strong>Real Size</strong></td>
+<td style="width: 15.1556%; height: 26px;"><strong>Time to Print<br /></strong></td>
+</tr>
+<tr style="height: 27px;">
+<td style="width: 21.1314%; height: 26px;">Low Quality, 1 wall</td>
+<td style="width: 29.1683%; height: 26px;">3cm x 3cm</td>
+<td style="width: 15.1556%; height: 26px;">2.96cm x 2.96 cm</td>
+<td style="width: 15.1556%; height: 26px;">16 min</td>
+</tr>
+<tr style="height: 26px;">
+<td style="width: 21.1314%; height: 26px;">Low Quality, Random z, 2 wall</td>
+<td style="width: 29.1683%; height: 26px;">3cm x 3cm</td>
+<td style="width: 15.1556%; height: 26px;">2.96cm x 2.96 cm</td>
+<td style="width: 15.1556%; height: 26px;">22 min</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<p>I also really liked the random z setting. I thought it made an interesting interior and looked sort of like a Music box on the exterior</p>
+<p><img src="https://github.com/davidjpearl/digifab-533/blob/main/Week3/Images/IMG_0360.JPG?raw=true" alt="IMG_0360.JPG" width="531" height="398" /> <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fmyreugemusicbox.com%2Fphotos%2FReuge_Sainte_Croix_72_Tone_Music_Box_CH3_72_Clair_de_Lune_37231_Switzerland_04_rien.jpg&amp;f=1&amp;nofb=1&amp;ipt=b7d2ad82f6be850a82eb6a38949db946f11303f3dfaeb66dfbd43166e4cd32fe&amp;ipo=images" alt="" width="399" height="399" /></p>
+<p></p>
+<h3 class="inner"><strong>Cylinder</strong></h3>
+<table style="border-collapse: collapse; width: 98.7616%; height: 110px;" border="1">
+<tbody>
+<tr style="height: 26px;">
+<td style="width: 21.1314%; height: 26px;"><strong>Setting</strong></td>
+<td style="width: 29.1683%; height: 26px;"><strong>Expected Size</strong></td>
+<td style="width: 15.1556%; height: 26px;"><strong>Real Size</strong></td>
+<td style="width: 15.1556%; height: 26px;"><strong>Time to Print<br /></strong></td>
+</tr>
+<tr style="height: 27px;">
+<td style="width: 21.1314%; height: 26px;">Low Quality, Tolerance 0.1</td>
+<td style="width: 29.1683%; height: 26px;">3cm x 3cm</td>
+<td style="width: 15.1556%; height: 26px;">3cm x 3cm</td>
+<td style="width: 15.1556%; height: 26px;">41 min</td>
+</tr>
+<tr style="height: 26px;">
+<td style="width: 21.1314%; height: 26px;">Low Quality, Tolerance 0.001</td>
+<td style="width: 29.1683%; height: 26px;">3cm x 3cm</td>
+<td style="width: 15.1556%; height: 26px;">2.9cm + 2.8cm*</td>
+<td style="width: 15.1556%; height: 26px;">22 min</td>
+</tr>
+<tr style="height: 32px;">
+<td style="width: 21.1314%; height: 32px;">
+<p>Low Quality, Spiralize Outer Contour</p>
+</td>
+<td style="width: 29.1683%; height: 32px;">3cm x 3cm</td>
+<td style="width: 15.1556%; height: 32px;">2.96cm x 3cm</td>
+<td style="width: 15.1556%; height: 32px;">22 min</td>
+</tr>
+<tr>
+<td style="width: 21.1314%;">
+<p>Low Quality, Rotated, Generate Support</p>
+</td>
+<td style="width: 29.1683%;">3cm x 3cm</td>
+<td style="width: 15.1556%;">1.3cm x 2.9 cm</td>
+<td style="width: 15.1556%;">55 min?</td>
+</tr>
+</tbody>
+</table>
+<p><strong></strong></p>
+<p>All was going well until I got to cylinders. My 2nd cylinder was printed on an uneven bed and had 1 side 1mm taller than the other side.<strong></strong></p>
+<p></p>
+<p><img src="https://github.com/davidjpearl/digifab-533/blob/main/Week3/Images/IMG_0363.JPG?raw=true" alt="IMG_0363.JPG" width="270" height="359" /></p>
+<p><strong>Note 1: Ensure that magentic bed is accurately placed before printing</strong></p>
+<p></p>
+<p>When adjusting the setting for Sprialize Outer Contour, I liked seeing the difference in how it would print in preview mode. Its a really great way to reduce the amount of time your print takes, when it's not too fragile or heavy!</p>
+<p><img src="https://github.com/davidjpearl/digifab-533/blob/main/Week3/Images/Screen%20Shot%202022-10-22%20at%203.03.10%20AM.png?raw=true" alt="Screen Shot 2022-10-22 at 3.03.10 AM.png" width="676" height="243" /> <img src="https://github.com/davidjpearl/digifab-533/blob/main/Week3/Images/Screen%20Shot%202022-10-22%20at%203.03.15%20AM.png?raw=true" alt="Screen Shot 2022-10-22 at 3.03.15 AM.png" width="558" height="244" /></p>
+<p>Then while I was printing cylinder 4, I ran out of filament. I didn't realize since the machine continued to make sounds. I ended up with an interesting cross section and a large brim.</p>
+<p>It was interesting to use Cura to turn the cylinder to the side, and see the preview of all the structure being added.</p>
+<p><img src="https://github.com/davidjpearl/digifab-533/blob/main/Week3/Images/Screen%20Shot%202022-10-22%20at%203.01.52%20AM.png?raw=true" alt="Screen Shot 2022-10-22 at 3.01.52 AM.png" width="282" height="305" /><img src="https://github.com/davidjpearl/digifab-533/blob/main/Week3/Images/Screen%20Shot%202022-10-22%20at%203.02.11%20AM.png?raw=true" alt="Screen Shot 2022-10-22 at 3.02.11 AM.png" width="280" height="293" /><img src="https://github.com/davidjpearl/digifab-533/blob/main/Week3/Images/Screen%20Shot%202022-10-22%20at%203.01.58%20AM.png?raw=true" alt="Screen Shot 2022-10-22 at 3.01.58 AM.png" width="312" height="293" /></p>
+<p><img src="https://github.com/davidjpearl/digifab-533/blob/main/Week3/Images/IMG_0343.JPG?raw=true" alt="IMG_0343.JPG" width="234" height="312" /><img src="https://github.com/davidjpearl/digifab-533/blob/main/Week3/Images/IMG_0362.JPG?raw=true" alt="IMG_0362.JPG" width="415" height="311" /><strong></strong></p>
+<p><strong>Note 2: Ensure you have enough filament before printing something new</strong><strong></strong><strong></strong><strong></strong></p>
+<p><strong></strong></p>
+<p>When my new filament arrived from Amazon, it did not fit through the machine. </p>
+<p><strong>Note 3: Make sure the filament you buy is soft enough to fit into Ender. Recommended filament protopasta did not work, perhaps it was too dense since I bought a fancy one.</strong></p>
+<h2>Designing a nested object</h2>
+<p>Using Shapr3D, I modelled a series of 3 gradually shapes, inspired by penne pasta, which comfortably nest inside eachother. I initially was worried about printing them all together, but I was extra aware to make sure there was no actual part touching.</p>
+<p><img src="https://github.com/davidjpearl/digifab-533/blob/main/Week3/Images/Screen%20Shot%202022-10-25%20at%206.24.24%20PM.png?raw=true" alt="Screen Shot 2022-10-25 at 6.24.24 PM.png" width="371" height="323" /><img src="https://github.com/davidjpearl/digifab-533/blob/main/Week3/Images/Screen%20Shot%202022-10-23%20at%208.14.49%20PM.png?raw=true" alt="Screen Shot 2022-10-23 at 8.14.49 PM.png" width="248" height="305" /><img src="https://github.com/davidjpearl/digifab-533/blob/main/Week3/Images/Screen%20Shot%202022-10-23%20at%208.14.57%20PM.png?raw=true" alt="Screen Shot 2022-10-23 at 8.14.57 PM.png" width="262" height="301" /> <img src="https://github.com/davidjpearl/digifab-533/blob/main/Week3/Images/Screen%20Shot%202022-10-25%20at%205.42.49%20PM.png?raw=true" alt="Screen Shot 2022-10-25 at 5.42.49 PM.png" width="325" height="343" /></p>
+<p></p>
+<table style="border-collapse: collapse; width: 98.7616%; height: 104px;" border="1">
+<tbody>
+<tr style="height: 26px;">
+<td style="width: 33.3218%; height: 26px;"><strong>Part</strong></td>
+<td style="width: 16.6609%; height: 26px;"><strong>Height</strong></td>
+<td style="width: 16.6609%; height: 26px;"><strong>Diameter</strong></td>
+<td style="width: 33.3208%; height: 26px;">Width</td>
+</tr>
+<tr style="height: 26px;">
+<td style="width: 33.3218%; height: 26px;">Small Piece</td>
+<td style="width: 16.6609%; height: 26px;">41.2cm</td>
+<td style="width: 16.6609%; height: 26px;">11.6cm</td>
+<td style="width: 33.3208%; height: 26px;">1.5cm</td>
+</tr>
+<tr style="height: 26px;">
+<td style="width: 33.3218%; height: 26px;">Medium Piece</td>
+<td style="width: 16.6609%; height: 26px;">35.3cm</td>
+<td style="width: 16.6609%; height: 26px;">19.4cm</td>
+<td style="width: 33.3208%; height: 26px;">2.4cm</td>
+</tr>
+<tr style="height: 26px;">
+<td style="width: 33.3218%; height: 26px;">Large Piece</td>
+<td style="width: 16.6609%; height: 26px;">30.8cm</td>
+<td style="width: 16.6609%; height: 26px;">30cm</td>
+<td style="width: 33.3208%; height: 26px;">3.7cm</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<p><strong>I'm not sure how to measure a shape like this...</strong></p>
+<p><img src="https://github.com/davidjpearl/digifab-533/blob/main/Week3/Images/IMG_0359.JPG?raw=true" alt="IMG_0359.JPG" width="429" height="572" /></p>
+<p></p>
+<h2>Final Results</h2>
+<p>I was very happy with my result, and happy that it came apart!</p>
+<p><img src="https://github.com/davidjpearl/digifab-533/blob/main/Week3/Images/IMG_0339.JPG?raw=true" alt="" width="338" height="450" /> <img src="https://github.com/davidjpearl/digifab-533/blob/main/Week3/Images/IMG_0340.JPG?raw=true" alt="IMG_0340.JPG" width="329" height="438" /> <img src="https://github.com/davidjpearl/digifab-533/blob/main/Week3/Images/IMG_0370.JPG?raw=true" alt="" width="568" height="426" /><img src="https://github.com/davidjpearl/digifab-533/blob/main/Week3/Images/IMG_0371.JPG?raw=true" alt="" width="415" height="311" /></p>
+</div>
+<div class="inner"></div>
+<div class="inner"><strong>SourceFiles</strong></div>
+<div class="inner">
+<p><a href="https://github.com/davidjpearl/digifab-533/tree/main/Week2">Rhino and Cura Source Files</a></p>
+<p></p>
+<p></p>
+</div>
+</div>
+<!-- Footer --><footer id="footer">
+<div class="inner">
+<section>
+<h2>Get in touch</h2>
+<form method="post" action="#">
+<div class="fields">
+<div class="field half"><input type="text" name="name" id="name" placeholder="Name" /></div>
+<div class="field half"><input type="email" name="email" id="email" placeholder="Email" /></div>
+<div class="field"><textarea name="message" id="message" placeholder="Message"></textarea></div>
+</div>
+<ul class="actions">
+<li><input type="submit" value="Send" class="primary" /></li>
+</ul>
+</form></section>
+<section></section>
+</div>
+</footer></header></div>
+	<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
