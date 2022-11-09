@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Generic - DigiFab 533 by David</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Pearl</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+<!-- Menu --><nav id="menu">
+<h2>Menu</h2>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="Modelling.html">Modelling and Laser Cutting</a></li>
+<li><a href="parametric.html">Parametric Modelling with Grasshopper </a></li>
+<li><a href="3dPrint.html">3D printing </a></li>
+<li><a href="Subtractive.html">Subtractive Manufacturing </a></li>
+<li><a href="Mesh.html">Mesh </a></li>
+<li><a href="Lamps.html">Lamps </a></li>
+<li><a href="Molding.html">Molding and Casting </a></li>
+<li><a href="Final.html">Final Project </a></li>
+<li><a href="about.html">About Me</a></li>
+</ul>
+</nav><!-- Main -->
+<div id="main">
+<div class="inner">
+<h1>Assignment 5A: Mesh</h1>
+<p><img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/15654ea9-1635-4ffb-824e-1ef444ed61aa/HeroA5.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221109%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20221109T004444Z&amp;X-Amz-Expires=86400&amp;X-Amz-Signature=c0151d013895926a7ab181594d0aaf19abccff0421a48b132632ebf2a0d28719&amp;X-Amz-SignedHeaders=host&amp;response-content-disposition=filename%3D%22HeroA5.png%22&amp;x-id=GetObject" alt="" /></p>
+<h2>Goal: Modify the mesh of two STLs to produce a single printable STL.</h2>
+<p>For this assignment, I began by reviewing Thingiverse and playing with various STLs. Some were very large and some were very small. I was drawn to the visual and functional simplicity of low-poly visuals, so decided to look that up. I found a great <a href="https://www.thingiverse.com/thing:2153267">low-poly chess set</a> which I thought would be a great base for my project.</p>
+<p><img src="https://github.com/davidjpearl/digifab-533/blob/main/Thingiverse.png?raw=true" alt="" width="360" height="239" /></p>
+<p>I began by rearranging pieces of the chess set to create a character, and realized it would kind of monsterous to use all the pieces in a single character, so I opted for 2 a MegaQueen and MegaKing.</p>
+<p><img src="https://github.com/davidjpearl/digifab-533/blob/main/Overview%20of%20STL.png?raw=true" alt="" width="360" height="238" /></p>
+<h1><img src="https://github.com/davidjpearl/digifab-533/blob/main/Screen%20Shot%202022-11-08%20at%203.45.41%20PM.png?raw=true" alt="" width="360" height="211" /></h1>
+<p>I made a few additional adjustments and then did "MeshBooleanUnion" to merge the meshes together. I the mesh was closed on the left-side menu.</p>
+<p><img src="https://github.com/davidjpearl/digifab-533/blob/main/Screen%20Shot%202022-11-08%20at%204.00.12%20PM.png?raw=true" alt="" width="360" height="227" /></p>
+<p>One issue I ran into was not one of my legs not accurately joining the mesh, despite being overlapping. I replaced the leg with another part and it worked well (and looked cooler).</p>
+<p>Following their merge, I began to clean them up with a "ReduceMesh" of 50% each, bringing my king from 1,432 to 716 and my queen from 1,992 to 996. I tried to reduce even more, but the details of the king's cross were disappearing so I reverted back.</p>
+<p><img src="https://github.com/davidjpearl/digifab-533/blob/main/Screen%20Shot%202022-11-08%20at%204.04.28%20PM.png?raw=true" alt="" width="360" height="406" /></p>
+<p>Additionally, I tried "QuadRemesh" but it took away from the low-poly look I was going for so I reverted that as well.</p>
+<p><img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/7afbfe02-9c05-485f-9780-e9618a82c42a/QuadRemesh.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221109%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20221109T004514Z&amp;X-Amz-Expires=86400&amp;X-Amz-Signature=07141e72e191b8be5aafbff456e29e0607849aacf0bf1c56939f22def4ed71a2&amp;X-Amz-SignedHeaders=host&amp;response-content-disposition=filename%3D%22QuadRemesh.png%22&amp;x-id=GetObject" alt="" width="360" height="345" /></p>
+<h2>Final Result</h2>
+<p>I played with rendering and here are my MegaKing and Queen</p>
+<p><img src="https://github.com/davidjpearl/digifab-533/blob/main/Screen%20Shot%202022-11-08%20at%204.05.23%20PM.png?raw=true" alt="" width="360" height="333" /></p>
+</div>
+<div class="inner"><strong></strong></div>
+<div class="inner"><strong>SourceFiles</strong></div>
+<div class="inner">
+<p><a href="https://github.com/davidjpearl/digifab-533/tree/main/Week2">Rhino and Grasshopper Source Files</a></p>
+<p></p>
+<p></p>
+</div>
+</div>
+<!-- Footer --><footer id="footer">
+<div class="inner">
+<section>
+<h2>Get in touch</h2>
+<form method="post" action="#">
+<div class="fields">
+<div class="field half"><input type="text" name="name" id="name" placeholder="Name" /></div>
+<div class="field half"><input type="email" name="email" id="email" placeholder="Email" /></div>
+<div class="field"><textarea name="message" id="message" placeholder="Message"></textarea></div>
+</div>
+<ul class="actions">
+<li><input type="submit" value="Send" class="primary" /></li>
+</ul>
+</form></section>
+<section></section>
+</div>
+</footer></header></div>
+	<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
