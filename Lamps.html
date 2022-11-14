@@ -1,13 +1,37 @@
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript><!-- Wrapper -->
-<div id="wrapper"><!-- Header --><header id="header">
-<div class="inner"><!-- Logo --> <a class="logo" href="index.html"> <span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Pearl</span> </a> <!-- Nav --><nav>
-<ul>
-<li><a href="#menu">Menu</a></li>
-</ul>
-</nav></div>
-</header><!-- Menu --> <!-- Menu --><nav id="menu">
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Generic - DigiFab 533 by David</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Pearl</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+<!-- Menu --><nav id="menu">
 <h2>Menu</h2>
 <ul>
 <li><a href="index.html">Home</a></li>
@@ -21,61 +45,64 @@
 <li><a href="Final.html">Final Project </a></li>
 <li><a href="about.html">About Me</a></li>
 </ul>
+</nav><!-- Main -->
 <div id="main">
 <div class="inner">
+
 <h1>Assignment 6: Lamp</h1>
 <p>/Cover Image</p>
 <h2>Goal: Make a lamp that can be assembled around the innards out of 3D printed parts.</h2>
 <p>For this assignment, I began by sketching out some ideas the previous week. I liked the concept of involving a humanoid, but it was difficult to pick something that stood out to me.</p>
 <p>Another idea I had was to incorporate some of the pottery/ceramics I work on. I tried some concepts, but the issue was that the ceramics were not ready for usage, and would shrink after being put in the kiln, so that felt too variable to manufacture a 3D part for.</p>
-<p>/PotteryLamp</p>
+<p><img src="https://github.com/davidjpearl/digifab-533/blob/main/LampImages/Ceramics.JPG?raw=true" alt="" width="500" height="667" /></p>
 <p>While trying to figure out what to create, I stumbled upon a beautiful lamp with a fun glass cover. While I had no intention to make a floor lamp, I liked the glass piece, and thought it would be the perfect base.</p>
-<p>/Lamp in wild</p>
+<p><img src="https://github.com/davidjpearl/digifab-533/blob/main/LampImages/FoundLamp.JPG?raw=true" alt="" width="500" height="667" /></p>
 <p>I started measuring the glass shade, and tested out the glow of the light through the glass, which I liked.</p>
-<p>/Lamp glow</p>
+<p><img src="https://github.com/davidjpearl/digifab-533/blob/main/LampImages/Testing%20the%20glow.JPG?raw=true" alt="" width="400" height="533" /></p>
 <p>So I started measuring the dimensions of the lamp, and sketched out a model of what I imagined it could look like, somewhat inspired by those cakes with the barbie inside them I thought I could utilize same concept and give a body and face to the lamp.</p>
-<p>/BarbieCake</p>
-<p>/SketchedLamp</p>
+<p><img src="https://github.com/davidjpearl/digifab-533/blob/main/LampImages/BarbieCake.jpg?raw=true" alt="" width="400" height="682" /></p>
+<p><img src="https://github.com/davidjpearl/digifab-533/blob/main/LampImages/SketchedLamp.JPG?raw=true" alt="" width="500" height="667" /></p>
 <p>Online, I found a <a href="https://www.thingiverse.com/thing:2776156">great low-poly STL of Venus de Milo</a> on thingiverse, which I thought would be a great topper for the lamp.</p>
-<p>/LowPolyVDM</p>
+<p><img src="https://github.com/davidjpearl/digifab-533/blob/main/LampImages/LowPolyVDM.png?raw=true" alt="" width="500" /></p>
 <p>I uploaded it to Rhino, and began by scaling it so the base matched the size of the top of my glass, ~44cm, and cut off excess using an extruded rectangle and "MeshBooleanDifference".</p>
-<p>/TrimmedVDM</p>
+<p><img src="https://github.com/davidjpearl/digifab-533/blob/main/LampImages/TrimmedVDM.png?raw=true" alt="" width="400" /></p>
 <p>Following this, I knew I wanted to use a screw mechanism, so went to thingiverse and found <a href="https://www.thingiverse.com/thing:65922'">a bottle with screw cap</a> which looked simple enough to cut and join to my mesh. It also had a corresponding cap which made it easy to design since the only constraint I'd have was ensuring their scale was adequate.</p>
 <p><strong>Note</strong>: When scaling things that will perfectly fit together, make sure you scale them at the same time so you don't have to worry about it later.</p>
-<p>/Bottle</p>
+<p><img src="https://github.com/davidjpearl/digifab-533/blob/main/LampImages/Bottle.png?raw=true" alt="" width="400" height="301" /></p>
 <p>I used "MeshBooleanDifference" to trim off the screw top from the bottle, and aligned it to my top character. Then I used an extruded circle, turned mesh, to fill in the gaps of the bottle hole and did a boolean union on all 3 pieces.</p>
-<p>/Union</p>
+<p><img src="https://github.com/davidjpearl/digifab-533/blob/main/LampImages/Union.png?raw=true" alt="" width="400" height="552" /></p>
 <p>I also took the cap, and made an extruded cylinder and "MeshBooleanDifference"d out the base so the lamp can fit.</p>
-<p>/CapHole</p>
+<p><img src="https://github.com/davidjpearl/digifab-533/blob/main/LampImages/capHole.png?raw=true" alt="" width="400" /></p>
 <p>I finalized my pieces and exported them seperately to Cura. I adjusted the way it prints so there is 0 infill. This is key so that the lamp can easily fit. I did include support since there were various parts that required complete support.&nbsp;</p>
-<p>/Support CUra</p>
+<p><img src="https://github.com/davidjpearl/digifab-533/blob/main/LampImages/SupportCura.png?raw=true" alt="" width="400" height="598" /></p>
 <h2>Final Result</h2>
 <p>After 15 hours of printing, now have this beautiful lamp!</p>
 <p><img src="https://github.com/davidjpearl/digifab-533/blob/main/Screen%20Shot%202022-11-08%20at%204.05.23%20PM.png?raw=true" alt="" width="360" height="333" /></p>
-</div>
-<div class="inner">&nbsp;</div>
-<div class="inner"><strong>SourceFiles</strong></div>
-<div class="inner">
-<p><a href="https://github.com/davidjpearl/digifab-533/blob/main/Assignment5.stl">Rhino Source Files</a></p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
 </div>
 </div>
 <!-- Footer --><footer id="footer">
 <div class="inner">
 <section>
 <h2>Get in touch</h2>
-<form action="#" method="post">
+<form method="post" action="#">
 <div class="fields">
-<div class="field half"><input id="name" name="name" type="text" placeholder="Name" /></div>
-<div class="field half"><input id="email" name="email" type="email" placeholder="Email" /></div>
-<div class="field"><textarea id="message" name="message" placeholder="Message"></textarea></div>
+<div class="field half"><input type="text" name="name" id="name" placeholder="Name" /></div>
+<div class="field half"><input type="email" name="email" id="email" placeholder="Email" /></div>
+<div class="field"><textarea name="message" id="message" placeholder="Message"></textarea></div>
 </div>
 <ul class="actions">
-<li><input class="primary" type="submit" value="Send" /></li>
+<li><input type="submit" value="Send" class="primary" /></li>
 </ul>
 </form></section>
 <section></section>
 </div>
-</footer></nav></div>
-<!-- Scripts -->
+</footer></header></div>
+	<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
